@@ -10,17 +10,17 @@ memcached
 |--- README.md
 ```
 
-**
-### 
-### Resources
+- *
 
-- Official Documentation: https://memcached.org/
-- View Provenance, Specifications, SBOM, Signature at: https://images.cleanstart.com/images/memcached
-- Docker Hub: https://hub.docker.com/r/cleanstart/memcached
-- CleanStart All Images: https://images.cleanstart.com
-- CleanStart All Community Images: https://hub.docker.com/u/cleanstart
+###
 
----
+## Resources
+
+- **Official Documentation:** https://memcached.org/
+- **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/memcached
+- **Docker Hub:** https://hub.docker.com/r/cleanstart/memcached
+- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ### Vulnerability Disclaimer
 
