@@ -36,15 +36,15 @@ Typical scenarios where this container excels:
 
 Download the container image from the registry:
 ```bash
-docker pull cleanstart/memcached:latest
-docker pull cleanstart/memcached:latest-dev
+docker pull ghcr.io/cleanstart-containers/memcached:latest
+docker pull ghcr.io/cleanstart-containers/memcached:latest-dev
 ```
 
 ### Basic Run
 
 Run the container with basic configuration:
 ```bash
-docker run -d --name memcached-instance -p 11211:11211 cleanstart/memcached:latest
+docker run -d --name memcached-instance -p 11211:11211 ghcr.io/cleanstart-containers/memcached:latest
 ```
 
 ### Production Deployment
@@ -57,21 +57,21 @@ docker run -d --name memcached-prod \
   --user 1000:1000 \
   -p 11211:11211 \
   -m 1024m \
-  cleanstart/memcached:latest
+  ghcr.io/cleanstart-containers/memcached:latest
 ```
 
 ### Volume Mount
 
 Mount local directory for persistent data:
 ```bash
-docker run -d -v $(pwd)/memcached-data:/data cleanstart/memcached:latest
+docker run -d -v $(pwd)/memcached-data:/data ghcr.io/cleanstart-containers/memcached:latest
 ```
 
 ### Port Forwarding
 
 Run with custom port mappings:
 ```bash
-docker run -d -p 11222:11211 cleanstart/memcached:latest
+docker run -d -p 11222:11211 ghcr.io/cleanstart-containers/memcached:latest
 ```
 
 ---
@@ -119,8 +119,8 @@ securityContext:
 
 ### Multi-Platform Images
 ```bash
-docker pull --platform linux/amd64 cleanstart/memcached:latest
-docker pull --platform linux/arm64 cleanstart/memcached:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/memcached:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/memcached:latest
 ```
 
 ---
